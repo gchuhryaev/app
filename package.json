@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/gchuhryaev/app-starter-kit/issues"
   },
-  "homepage": "https://github.com/gchuhryaev/app-starter-kit#readme"
+  "homepage": "https://github.com/gchuhryaev/app-starter-kit#readme",
+  "devDependencies": {
+    "rollup": "^2.45.1"
+  }
 }
