@@ -5,9 +5,9 @@
   "private": true,
   "scripts": {
     "build": "rollup -c etc/rollup.config.js",
-    "watch": "rollup -w -c etc/rollup.config.js",
-    "eslint": "eslint .",
-    "eslint:fix": "eslint --fix ."
+    "watch": "rollup -c etc/rollup.config.js",
+    "eslint": "eslint -c etc/.eslintrc.js .",
+    "eslint:fix": "eslint -c etc/.eslintrc.js --fix ."
   },
   "repository": {
     "type": "git",
@@ -22,10 +22,22 @@
   "homepage": "https://github.com/gchuhryaev/app-starter-kit#readme",
   "devDependencies": {
     "@babel/core": "^7.13.15",
+    "@babel/eslint-parser": "^7.13.14",
+    "@babel/plugin-proposal-export-default-from": "^7.12.13",
+    "@babel/plugin-proposal-object-rest-spread": "^7.13.8",
+    "@babel/plugin-proposal-optional-chaining": "^7.13.12",
+    "@babel/plugin-proposal-throw-expressions": "^7.12.13",
     "@babel/preset-env": "^7.13.15",
     "@babel/preset-react": "^7.13.13",
     "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^18.0.0",
+    "@rollup/plugin-eslint": "^8.0.1",
+    "@rollup/plugin-html": "^0.2.3",
+    "@rollup/plugin-node-resolve": "^11.2.1",
     "dotenv": "^8.2.0",
-    "rollup": "^2.45.1"
+    "eslint": "^7.24.0",
+    "rollup": "^2.45.1",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-serve": "^1.1.0"
   }
 }
